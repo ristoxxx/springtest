@@ -20,9 +20,12 @@ public class BandController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Band> getBandById(@PathVariable(value = "id") Long bandId) {
-        Band band = bandRepository.findById(bandId)
-                .orElse(new ResourceNotFoundExeption ("Band not found for this id :: " + bandId));
-        return ResponseEntity.ok().body(band);
+        return bandRepository.findById(bandId);
+    }
+
+    @GetMapping()
+    public Iterable<Cat> getBands() {
+        return catRepository.findAll();
     }
 
     @PostMapping("/add")
