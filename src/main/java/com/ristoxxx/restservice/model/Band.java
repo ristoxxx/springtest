@@ -1,4 +1,4 @@
-package com.ristoxxx.restservice;
+package com.ristoxxx.restservice.model;
 
 import java.util.Objects;
 

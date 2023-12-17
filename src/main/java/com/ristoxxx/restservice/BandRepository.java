@@ -1,7 +1,12 @@
 package com.ristoxxx.restservice;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
 
-public interface BandRepository extends JpaRepository<Band, Long> {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.ristoxxx.restservice.model.Band;
+
+public interface BandRepository extends JpaRepository<Band, Integer> {
 
 }
