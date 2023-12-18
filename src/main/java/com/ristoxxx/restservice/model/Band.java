@@ -1,5 +1,7 @@
 package com.ristoxxx.restservice.model;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import jakarta.persistence.Entity;
@@ -7,6 +9,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import com.ristoxxx.restservice.model.Memeber;	
+import com.ristoxxx.restservice.model.Genre;	
 
 @Entity
 public class Band {
@@ -16,8 +20,8 @@ public class Band {
 
     private String name;
     private String city;
-    private String genre;
-    private String members;
+    private Genre genre;
+    private ArrayList<Memeber> members = new ArrayList<Memeber>();
     private String spotifyUrl;
     
 	public String getName() {
