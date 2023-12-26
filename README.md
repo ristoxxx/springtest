@@ -2,4 +2,4 @@
 
 # Spring boot band database back end
 
-Simple test project to store band data 
+Simple test project to store bands
