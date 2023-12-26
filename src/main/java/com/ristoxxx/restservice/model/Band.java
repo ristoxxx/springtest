@@ -21,8 +21,11 @@ public class Band {
     private String name;
     private String city;
     private Genre genre;
-    private ArrayList<Memeber> members = new ArrayList<Memeber>();
-    private String spotifyUrl;
+  
+
+	private ArrayList<Memeber> members = new ArrayList<Memeber>();
+   
+	private String spotifyUrl;
     
 	public String getName() {
 		return name;
@@ -39,21 +42,15 @@ public class Band {
 		this.city = city;
 	}
 	
-	public String getGenre() {
-		return genre;
-	}
-	
-	public void setGenre(String genre) {
-		this.genre = genre;
-	}
-
-	public String getMembers() {
+	public ArrayList<Memeber> getMembers() {
 		return members;
 	}
-
-	public void setMembers(String members) {
+	public void setMembers(ArrayList<Memeber> members) {
 		this.members = members;
 	}
+	
+
+
 	
 	public String getSpotifyUrl() {
 		return spotifyUrl;
@@ -61,6 +58,13 @@ public class Band {
 	
 	public void setSpotifyUrl(String spotifyUrl) {
 		this.spotifyUrl = spotifyUrl;
+	}
+
+	public Genre getGenre() {
+		return genre;
+	}
+	public void setGenre(Genre genre) {
+		this.genre = genre;
 	}
 
     // getters and setters
