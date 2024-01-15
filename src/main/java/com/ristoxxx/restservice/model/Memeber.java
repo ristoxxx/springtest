@@ -24,7 +24,5 @@ public class Memeber {
         this.memberName = memberName;
     }
 
-
-
     
 }
